@@ -1,0 +1,43 @@
+<!doctype html>
+<html lang="en">
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width,initial-scale=1">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<title>Memory Game</title>
+		<link href="https://fonts.googleapis.com/css?family=Raleway:300,400,700" rel="stylesheet">
+		<link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+		<link rel="stylesheet" type="text/css" href="css/main.css">
+		<script src="js/main.js"></script>
+	</head>
+	<body>
+		<main>
+			<section id="sectionNewGame" class="container text-center">
+				<img src="img/logo.png" alt="Memory">
+				<img src="img/rules.jpg" alt="Rules: Find matching pictures">
+				<h4>Enter your name</h4>
+				<input id="playerName" class="text-center" type="text">
+				<h4>How many cards do you want?</h4>
+				<div id="fieldSizesWrapper"></div>
+				<div class="space-4x"></div>
+				<button id="btnStartButton" class="btn-lg btn-success">Start game</button>
+			</section>
+			<section id="sectionGame" class="container text-center" style="display: none;">
+				<header class="fa-1-1-2x">
+					<div id="gameInfo">
+						<button class="btn-icon-only btn-round" onclick="NewGame();"><span class="fa fa-repeat"></span></button>
+						<span class="gameInfoWrapper">
+							<span id="playerNameValue">-</span>
+							<span class="fa fa-clock-o"></span>
+							<span id="gameTimerValue">0</span>
+							<span class="fa fa-star-o"></span>
+							<span id="starRatingValue">-</span>
+							<span class="fa fa-hand-paper-o"></span>
+							<span id="cardClickValue">-</span>
+						</span>
+					</div>
+				</header>
+			</section>
+		</main>
+	</body>
+</html>
